@@ -1,0 +1,164 @@
+.slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 755px;
+    height: 390px;
+  }
+  
+  .slides {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: -400px;
+    width: 10000px;
+    transition: left 0.4s ease-out;
+  }
+  
+  .slides.shifting {
+    transition: left 0.2s ease-out;
+  }
+  .slide img{
+    width: 755px;
+    height: 390px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
+    border-radius: 2px;
+  }
+  .control {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50px;
+    margin-top: -20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    transition: 1s ease-out;
+  }
+  .slider:hover .control {
+      visibility: visible;
+      transition: 1s;
+  }
+  .prev,
+  .next {
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  .prev {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+    left: 0px;
+  }
+  
+  .next {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+    right: 0px;
+  }
+  
+  .prev:active,
+  .next:active {
+    transform: scale(0.8);
+  }
+  
+.en-pagination li.active {
+    color: #e3e3e3;
+    background-color: #000000;
+}
+
+.en-pagination {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.en-pagination li {
+    opacity: 1;
+    color: #000;
+    padding: 5px 10px;
+    margin-right: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: #f8f7f6;
+    font-weight: bold;
+    font-size: 12pt;
+    border-radius: 3px;
+    border-bottom-right-radius: 10px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.en-pagination li:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+.slide-title {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    background: #212121;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    line-height: 18pt;
+    border-bottom: 1px solid #fff;
+    text-transform: capitalize;
+    width: 755px;
+}
+.enCokList {
+    padding: 0;
+    margin: 0;
+}
+.enCokList li {
+    display: block;
+    padding: 10px 0;
+    background-color: #212121;
+    color: #fff;
+    font-size: 9pt;
+    border-radius: 3px!important;
+    list-style: none;
+    float: left;
+    border-right: 1px solid #fff;
+    width: 16.53%;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.enCokList li.active {
+    background-color: #fff;
+    color: #000!important;
+}
+.enCokList li.active a {
+    background-color: #fff;
+    color: #000!important;
+}
+.enCokList li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+div[data-sliderpanel="active"] {
+  display: flex!important;
+}
+div[data-sliderpanel] {
+  display: none;
+}
