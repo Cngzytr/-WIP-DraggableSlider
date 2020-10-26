@@ -155,10 +155,3 @@
     background-color: #fff;
     color: #000;
 }
-
-div[data-sliderpanel="active"] {
-  display: flex!important;
-}
-div[data-sliderpanel] {
-  display: none;
-}
